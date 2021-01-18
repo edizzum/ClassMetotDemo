@@ -63,10 +63,6 @@ namespace ClassMetotDemo
             Console.Write(musteri2.MusteriAdi + " " + "İsimli" + " "); MusterininBilgileri.MusteriYasSorgulama(musteri2);
             Console.Write(musteri3.MusteriAdi + " " + "İsimli" + " "); MusterininBilgileri.MusteriYasSorgulama(musteri3);
             Console.Write(musteri4.MusteriAdi + " " + "İsimli" + " "); MusterininBilgileri.MusteriYasSorgulama(musteri4);
-
-            Console.WriteLine("\n");
-
-
         }
     }
 }
