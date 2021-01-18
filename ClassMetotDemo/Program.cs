@@ -9,14 +9,14 @@ namespace ClassMetotDemo
             Musteri musteri1 = new Musteri();
             musteri1.MusteriAdi = "Yücel";
             musteri1.MusteriAdres = "Washington D.C";
-            musteri1.MusteriID = "12345678912";
-            musteri1.MusteriYas = 19;
+            musteri1.MusteriID = "58924678912";
+            musteri1.MusteriYas = 23;
 
             Musteri musteri2 = new Musteri();
             musteri2.MusteriAdi = "Güney";
             musteri2.MusteriAdres = "New York";
-            musteri2.MusteriID = "12345672456";
-            musteri2.MusteriYas = 19;
+            musteri2.MusteriID = "76834672456";
+            musteri2.MusteriYas = 42;
 
             Musteri musteri3 = new Musteri();
             musteri3.MusteriAdi = "Can";
@@ -63,6 +63,18 @@ namespace ClassMetotDemo
             Console.Write(musteri2.MusteriAdi + " " + "İsimli" + " "); MusterininBilgileri.MusteriYasSorgulama(musteri2);
             Console.Write(musteri3.MusteriAdi + " " + "İsimli" + " "); MusterininBilgileri.MusteriYasSorgulama(musteri3);
             Console.Write(musteri4.MusteriAdi + " " + "İsimli" + " "); MusterininBilgileri.MusteriYasSorgulama(musteri4);
+            Console.WriteLine("\n");
+
+            Musteri[] Musteriler = new Musteri[] { musteri1, musteri2, musteri3, musteri4 };
+            foreach (var Hepsi in Musteriler)
+            {
+                MusterininBilgileri.MusteriEkleme(Hepsi);
+                MusterininBilgileri.MusteriSilme(Hepsi);
+                MusterininBilgileri.MusteriIDŞifreleme(Hepsi);
+                MusterininBilgileri.MusteriYasSorgulama(Hepsi);
+                MusterininBilgileri.MusteriAdresSorgulama(Hepsi);
+                Console.WriteLine("\n");
+            }
         }
     }
 }
